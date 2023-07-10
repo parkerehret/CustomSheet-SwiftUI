@@ -16,6 +16,9 @@ struct SheetView: View {
     @State private var oneMonthBefore = false
     
     @State var showSheetView = false
+    
+    func edit() { }
+    func delete() { }
 
     var body: some View {
         
@@ -41,15 +44,28 @@ struct SheetView: View {
                                 HStack {
                                     Spacer()
                                     
-                                    Image(systemName: "ellipsis")
-                                        .font(.title2)
-                                        .foregroundColor(Color(red: 0.97, green: 0.145, blue: 0.52).opacity(0.5))
-                                        .fontWeight(.medium)
-                                        .frame(width: 28, height: 28, alignment: .center)
-                                        .background(Color.white.opacity(0))
-                                        .cornerRadius(4)
-                                        .padding(.top, -12)
-                                        .padding(.trailing, 12)
+                                    Menu {
+                                        Button(action: edit) {
+                                            Label("Edit Event", systemImage: "pencil")
+                                        }
+                                        .foregroundColor(.gray)
+                                        
+                                        Button(role: .destructive, action: delete) {
+                                            Label("Delete Event", systemImage: "trash")
+                                        }
+                                            .foregroundColor(.red)
+                                    } label: {
+                                        Image(systemName: "ellipsis")
+                                            .font(.title2)
+                                            .foregroundColor(Color(red: 0.97, green: 0.145, blue: 0.52).opacity(0.5))
+                                            .fontWeight(.medium)
+                                            .frame(width: 28, height: 28, alignment: .center)
+                                            .background(Color.white.opacity(0))
+                                            .cornerRadius(4)
+                                            .padding(.top, -12)
+                                            .padding(.trailing, 12)
+                                    }
+        
                                 }
                                 
                                 
