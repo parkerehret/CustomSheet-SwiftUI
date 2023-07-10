@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8CC779B2A5C5CF10002F195 /* Custom_SheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC779A2A5C5CF10002F195 /* Custom_SheetApp.swift */; };
+		C8CC779B2A5C5CF10002F195 /* CustomSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC779A2A5C5CF10002F195 /* CustomSheetApp.swift */; };
 		C8CC779D2A5C5CF10002F195 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC779C2A5C5CF10002F195 /* ContentView.swift */; };
 		C8CC779F2A5C5CF30002F195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CC779E2A5C5CF30002F195 /* Assets.xcassets */; };
 		C8CC77A22A5C5CF30002F195 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CC77A12A5C5CF30002F195 /* Preview Assets.xcassets */; };
+		C8CC77A92A5C5D3A0002F195 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC77A82A5C5D3A0002F195 /* SheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8CC77972A5C5CF10002F195 /* Custom Sheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Sheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8CC779A2A5C5CF10002F195 /* Custom_SheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_SheetApp.swift; sourceTree = "<group>"; };
+		C8CC779A2A5C5CF10002F195 /* CustomSheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetApp.swift; sourceTree = "<group>"; };
 		C8CC779C2A5C5CF10002F195 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8CC779E2A5C5CF30002F195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8CC77A12A5C5CF30002F195 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8CC77A82A5C5D3A0002F195 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		C8CC77992A5C5CF10002F195 /* Custom Sheet */ = {
 			isa = PBXGroup;
 			children = (
-				C8CC779A2A5C5CF10002F195 /* Custom_SheetApp.swift */,
+				C8CC779A2A5C5CF10002F195 /* CustomSheetApp.swift */,
 				C8CC779C2A5C5CF10002F195 /* ContentView.swift */,
+				C8CC77A82A5C5D3A0002F195 /* SheetView.swift */,
 				C8CC779E2A5C5CF30002F195 /* Assets.xcassets */,
 				C8CC77A02A5C5CF30002F195 /* Preview Content */,
 			);
@@ -138,7 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8CC779D2A5C5CF10002F195 /* ContentView.swift in Sources */,
-				C8CC779B2A5C5CF10002F195 /* Custom_SheetApp.swift in Sources */,
+				C8CC77A92A5C5D3A0002F195 /* SheetView.swift in Sources */,
+				C8CC779B2A5C5CF10002F195 /* CustomSheetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
