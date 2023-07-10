@@ -108,7 +108,7 @@ struct ContentView: View {
     var sheet: some View {
         SheetView()
             .offset(y: showSheetView ? 16 + dragState.translation.height : 1000)
-            .animation(.interpolatingSpring(stiffness: 300.0, damping: 30.0, initialVelocity: 10.0), value: dragState.translation.height)
+            .animation(.interpolatingSpring(stiffness: 300.0, damping: 30.0, initialVelocity: 10.0))
             .gesture(
                 DragGesture().updating($dragState) { (value, state, _) in
                     state = .dragging(translation: value.translation)
